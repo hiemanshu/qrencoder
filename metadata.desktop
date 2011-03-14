@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=QRencoder
+Type=Service
+ServiceTypes=Plasma/Applet
+Icon=utilities-terminal
+X-Plasma-API=python
+X-Plasma-MainScript=code/main.py
+X-KDE-PluginInfo-Author=Hiemanshu Sharma
+X-KDE-PluginInfo-Email=mail@theindiangeek.in
+X-KDE-PluginInfo-Name=QRencoder
+X-KDE-PluginInfo-Version=0.1.0
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=PyQt4
+X-KDE-PluginInfo-License=GPLv3
+X-KDE-PluginInfo-EnabledByDefault=true
