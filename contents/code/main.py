@@ -28,7 +28,6 @@ from PyKDE4 import plasmascript
 from PyKDE4.kdecore import KUrl
 from subprocess import call
 
-
 class qrencoder(plasmascript.Applet):
 
     #   Constructor, forward initialization to its superclass
@@ -68,8 +67,8 @@ class qrencoder(plasmascript.Applet):
         self.setLayout(self.layout)
 
     def generate(self):
-	call(['qrencode', '-s', str(10), '-m', str(3), '-o', '/home/hiemanshu/qrencoder.png', self.text.text()])
-	self.webView.setUrl(KUrl("file:///home/hiemanshu/qrencoder.png"))
+	call(['qrencode', '-s', str(10), '-m', str(3), '-o', '/tmp/qrencoder.png', self.text.text()])
+	self.webView.setUrl(KUrl("file:///tmp/qrencoder.png"))
 	
     #   Simple painting function
     def paintInterface(self, painter, option, rect):
